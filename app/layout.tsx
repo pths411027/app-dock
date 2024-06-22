@@ -4,11 +4,6 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "App dock",
-  description: "marcus ui portfolio",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,9 +11,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <link rel="icon" href="./favicon.png" />
-      </Head>
+      <head>
+        <title>App Dock</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.io" />
+        <meta name="description" content="App Dock like mac os" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
