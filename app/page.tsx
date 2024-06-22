@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <main className={styles.container}>
-      <div className={styles.app_title}>Social Media selector dock</div>
+      <div className={styles.app_title}>Application dock</div>
       <div
         ref={ref}
         className={styles.dock_container}
